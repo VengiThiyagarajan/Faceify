@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vengithiyagarajan.faceapi.MainActivity">
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/topLayout"
+
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+    <com.example.vengithiyagarajan.faceapi.CameraSourcePreview
+
+        android:id="@+id/preview"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <com.example.vengithiyagarajan.faceapi.GraphicOverlay
+
+            android:id="@+id/faceOverlay"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+
+    </com.example.vengithiyagarajan.faceapi.CameraSourcePreview>
+    </LinearLayout>
+    <ScrollView
+
+        android:id="@+id/scrollView"
+
+        android:paddingLeft="16dp"
+
+        android:paddingRight="16dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="100dp"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true">
+
+        <TextView
+
+            android:id="@+id/faceUpdates"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:text="Let's track the Face"
+            android:textAlignment="center"
+            android:textColor="#B2EBF2"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+
+            />
+
+    </ScrollView>
+
+</RelativeLayout>
